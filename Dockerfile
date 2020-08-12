@@ -6,7 +6,7 @@ FROM spack/ubuntu-bionic:latest as builder
 RUN mkdir /opt/spack-environment \
 &&  (echo "spack:" \
 &&   echo "  specs:" \
-&&   echo "  - hdf5@1.8.21 +cxx +hl +fortran" \
+&&   echo "  - hdf5@1.10.6 +cxx +hl +fortran" \
 &&   echo "  concretization: together" \
 &&   echo "  config:" \
 &&   echo "    install_tree: /opt/software" \
